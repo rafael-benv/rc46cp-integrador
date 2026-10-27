@@ -7,10 +7,13 @@ enable
 configure terminal
 hostname r-pb-rbb
 
+ipv6 unicast-routing
+
 interface fa0/0
-ip address 200.136.64.2 255.255.255.192
+ip address 200.136.64.1 255.255.255.192
 ipv6 address 2001:DB8:CAFE:6400::1/64
 ipv6 address FE80::1 link-local
+ipv6 nd other-config-flag
 description lan pato branco
 no shutdown
 exit
@@ -18,6 +21,7 @@ exit
 interface se0/0/0
 ip address 200.136.64.225 255.255.255.252
 ipv6 address 2001:DB8:CAFE:64FF::0:1/112
+clock rate 56000
 description enlace pb vit
 no shutdown
 exit
@@ -25,11 +29,11 @@ exit
 interface se0/0/1
 ip address 200.136.64.238 255.255.255.252
 ipv6 address 2001:DB8:CAFE:64FF::3:2/112
+clock rate 56000
 description enlace pb ita
 no shutdown
 exit
 
-ipv6 unicast-routing
 exit
 
 write

@@ -1,6 +1,6 @@
 enable
 configure terminal
-sdm prefer dual-ipv4-and-ipv6
+sdm prefer dual-ipv4-and-ipv6 default
 end
 reload
 
@@ -12,10 +12,12 @@ hostname sw-pb-rbb
 
 interface vlan1
 ip address 200.136.64.2  255.255.255.192
+ipv6 address 2001:DB8:CAFE:6400::2/64
 description lan pato branco
 no shutdown
 exit
 
 ip default-gateway 200.136.64.1 
 exit
+write
 

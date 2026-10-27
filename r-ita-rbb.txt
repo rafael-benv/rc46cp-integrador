@@ -1,0 +1,38 @@
+enable
+erase startup-config
+y
+reload
+
+enable
+configure terminal
+hostname r-ita-rbb
+        
+interface fa0/0
+ip address 200.136.64.241 255.255.255.252
+ipv6 address 2001:DB8:CAFE:64FF::4:1/112
+description enlace ita dv
+no shutdown
+exit
+
+interface se0/0/0
+ip address 200.136.64.237 255.255.255.252
+ipv6 address 2001:DB8:CAFE:64FF::3:1/112
+clock rate 56000
+description enlace ita pb
+no shutdown
+exit
+
+interface se0/0/1
+ip address 200.136.64.234 255.255.255.252
+ipv6 address 2001:DB8:CAFE:64FF::2:2/112
+clock rate 56000
+description enlace ita fb
+no shutdown
+exit
+
+ipv6 unicast-routing
+exit
+
+write
+show ip interface brief
+show ipv6 interface brief
