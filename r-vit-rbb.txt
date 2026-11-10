@@ -7,6 +7,57 @@ enable
 configure terminal
 hostname r-vit-rbb
 
+ipv6 unicast-routing
+ip route 200.136.64.0 255.255.255.192 200.136.64.230
+ip route 200.136.64.64 255.255.255.224 200.136.64.230
+ip route 200.136.64.96 255.255.255.224 200.136.64.230
+
+ip route 200.136.64.224 255.255.255.252 200.136.64.230
+ip route 200.136.64.232 255.255.255.252 200.136.64.230
+ip route 200.136.64.236 255.255.255.252 200.136.64.230
+ip route 200.136.64.240 255.255.255.252 200.136.64.230
+
+ipv6 route 2001:DB8:CAFE:6400::/64 2001:DB8:CAFE:64FF::1:2
+ipv6 route 2001:DB8:CAFE:6401::/64 2001:DB8:CAFE:64FF::1:2
+ipv6 route 2001:DB8:CAFE:6402::/64 2001:DB8:CAFE:64FF::1:2
+
+ipv6 route 2001:DB8:CAFE:6400::0:0/112 2001:DB8:CAFE:64FF::1:2
+ipv6 route 2001:DB8:CAFE:6400::2:0/112 2001:DB8:CAFE:64FF::1:2
+ipv6 route 2001:DB8:CAFE:6400::3:0/112 2001:DB8:CAFE:64FF::1:2
+ipv6 route 2001:DB8:CAFE:6400::4:0/112 2001:DB8:CAFE:64FF::1:2
+
+security passwords min-length 10
+service password-encryption
+enable secret @dmin-rafael
+login block-for 120 attempts 3 within 60
+
+ip domain-name rafael.benvindo.com.br
+username rafael secret ssh@Network1ng
+
+crypto key generate rsa general-keys modulus 1024
+
+banner motd #
+----------------------------------------------------------------------------
+|                                                                          |
+|                            Roteador r-vit-rbb                            |
+|                                                                          |
+|                 ATENCAO Acesso Restrito a pessoas autorizadas!           |
+|                                                                          |
+|Administrador: RAFAEL BORGES BENVINDO (rafaelbenvindo@alunos.utfpr.edu.br)|
+|                                                                          |
+----------------------------------------------------------------------------
+#
+
+line console 0
+password @Cons-rafael
+login
+exec-timeout 5 0
+
+line vty 0 15
+login local
+transport input ssh
+exec-timeout 5
+
 interface se0/0/0
 ip address 200.136.64.229 255.255.255.252
 ipv6 address 2001:DB8:CAFE:64FF::1:1/112
@@ -23,7 +74,6 @@ description enlace vit pb
 no shutdown
 exit
 
-ipv6 unicast-routing
 exit
 
 write

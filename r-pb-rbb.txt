@@ -2,12 +2,60 @@ enable
 erase startup-config
 y
 reload
+no
 
 enable
 configure terminal
 hostname r-pb-rbb
 
 ipv6 unicast-routing
+ip route 200.136.64.64 255.255.255.224 200.136.64.226
+ip route 200.136.64.96 255.255.255.224 200.136.64.226
+
+ip route 200.136.64.228 255.255.255.252 200.136.64.226
+ip route 200.136.64.232 255.255.255.252 200.136.64.226
+ip route 200.136.64.236 255.255.255.252 200.136.64.226
+ip route 200.136.64.240 255.255.255.252 200.136.64.226
+
+ipv6 route 2001:DB8:CAFE:6401::/64 2001:DB8:CAFE:64FF::2
+ipv6 route 2001:DB8:CAFE:6402::/64 2001:DB8:CAFE:64FF::2
+
+ipv6 route 2001:DB8:CAFE:6400::1:0/112 2001:DB8:CAFE:64FF::2
+ipv6 route 2001:DB8:CAFE:6400::2:0/112 2001:DB8:CAFE:64FF::2
+ipv6 route 2001:DB8:CAFE:6400::3:0/112 2001:DB8:CAFE:64FF::2
+ipv6 route 2001:DB8:CAFE:6400::4:0/112 2001:DB8:CAFE:64FF::2
+
+security passwords min-length 10
+service password-encryption
+enable secret @dmin-rafael
+login block-for 120 attempts 3 within 60
+
+ip domain-name rafael.benvindo.com.br
+username rafael secret ssh@Network1ng
+
+crypto key generate rsa general-keys modulus 1024
+
+banner motd #
+----------------------------------------------------------------------------
+|                                                                          |
+|                            Roteador r-pb-rbb                   |
+|                                                                          |
+|                 ATENCAO Acesso Restrito a pessoas autorizadas!           |
+|                                                                          |
+|Administrador: RAFAEL BORGES BENVINDO (rafaelbenvindo@alunos.utfpr.edu.br)|
+|                                                                          |
+----------------------------------------------------------------------------
+#
+
+line console 0
+password @Cons-rafael
+login
+exec-timeout 5 0
+
+line vty 0 15
+login local
+transport input ssh
+exec-timeout 5
 
 interface fa0/0
 ip address 200.136.64.1 255.255.255.192
