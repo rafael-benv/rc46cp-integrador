@@ -60,6 +60,7 @@ exec-timeout 5
 interface fa0/0
 ip address 200.136.64.97 255.255.255.224
 ipv6 address 2001:DB8:CAFE:6402::1/64
+ipv6 address FE80::1 link-local
 ipv6 nd other-config-flag
 description lan dois vizinhos
 no shutdown
