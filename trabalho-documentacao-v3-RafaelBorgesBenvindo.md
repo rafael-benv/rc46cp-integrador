@@ -85,11 +85,11 @@ RA: 2666464
 | 2001:DB8:CAFE:6401::/64     | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
 | 2001:DB8:CAFE:6402::/64     | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
 
-| 2001:DB8:CAFE:6400::0:0/64  | FE80::1                     | Se0/0/0            |
-| 2001:DB8:CAFE:6400::1:0/64  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::2:0/64  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::3:0/64  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::4:0/64  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::0:0/112  | FE80::1                     | Se0/0/0            |
+| 2001:DB8:CAFE:6400::1:0/112  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::2:0/112  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::3:0/112  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::4:0/112  | 2001:DB8:CAFE:64FF::2/112   | Se0/0/0            |
 
 ### Roteador Francisco Beltrão
 
@@ -115,11 +115,11 @@ RA: 2666464
 | 2001:DB8:CAFE:6401::/64     | FE80::1                       | Fa0/0              |
 | 2001:DB8:CAFE:6402::/64     | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
 
-| 2001:DB8:CAFE:6400::0:0/64  | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::1:0/64  | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::2:0/64  | FE80::1                       | Se0/0/0            |
-| 2001:DB8:CAFE:6400::3:0/64  | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::4:0/64  | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::0:0/112 | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::1:0/112 | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::2:0/112 | FE80::1                       | Se0/0/0            |
+| 2001:DB8:CAFE:6400::3:0/112 | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::4:0/112 | 2001:DB8:CAFE:64FF::2:2/112   | Se0/0/0            |
 
 ### Roteador Vitorino
 
@@ -131,11 +131,11 @@ RA: 2666464
 | 200.136.64.64   | 255.255.255.224  | 200.136.64.230  | Se0/0/0            |
 | 200.136.64.96   | 255.255.255.224  | 200.136.64.230  | Se0/0/0            |
 
-| 200.136.64.224  | 255.255.255.252  | 200.136.64.234  | Se0/0/0            |
+| 200.136.64.224  | 255.255.255.252  | 200.136.64.230  | Se0/0/0            |
 | 200.136.64.228  | 255.255.255.252  | 0.0.0.0         | Se0/0/0            |
-| 200.136.64.232  | 255.255.255.252  | 200.136.64.234  | Se0/0/0            |
-| 200.136.64.236  | 255.255.255.252  | 200.136.64.234  | Se0/0/0            |
-| 200.136.64.240  | 255.255.255.252  | 200.136.64.234  | Se0/0/0            |
+| 200.136.64.232  | 255.255.255.252  | 200.136.64.230  | Se0/0/0            |
+| 200.136.64.236  | 255.255.255.252  | 200.136.64.230  | Se0/0/0            |
+| 200.136.64.240  | 255.255.255.252  | 200.136.64.230  | Se0/0/0            |
 
 #### IPv6
 
@@ -145,11 +145,11 @@ RA: 2666464
 | 2001:DB8:CAFE:6401::/64     | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
 | 2001:DB8:CAFE:6402::/64     | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
 
-| 2001:DB8:CAFE:6400::0:0/64  | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::1:0/64  | FE80::1                       | Se0/0/0            |
-| 2001:DB8:CAFE:6400::2:0/64  | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::3:0/64  | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::4:0/64  | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::0:0/112 | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::1:0/112 | FE80::1                       | Se0/0/0            |
+| 2001:DB8:CAFE:6400::2:0/112 | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::3:0/112 | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::4:0/112 | 2001:DB8:CAFE:64FF::1:2/112   | Se0/0/0            |
 
 ### Roteador Itapejara D'Oeste
 
@@ -175,11 +175,11 @@ RA: 2666464
 | 2001:DB8:CAFE:6401::/64     | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
 | 2001:DB8:CAFE:6402::/64     | 2001:DB8:CAFE:64FF::4:2/112   | Fa0/0              |
 
-| 2001:DB8:CAFE:6400::0:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::1:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::2:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
-| 2001:DB8:CAFE:6400::3:0/64  | FE80::1                       | Se0/0/0            |
-| 2001:DB8:CAFE:6400::4:0/64  | FE80::1                       | Fa0/0              |
+| 2001:DB8:CAFE:6400::0:0/112  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::1:0/112  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::2:0/112  | 2001:DB8:CAFE:64FF::3:2/112   | Se0/0/0            |
+| 2001:DB8:CAFE:6400::3:0/112  | FE80::1                       | Se0/0/0            |
+| 2001:DB8:CAFE:6400::4:0/112  | FE80::1                       | Fa0/0              |
 
 ### Roteador Dois Vizinhos
 
@@ -199,17 +199,17 @@ RA: 2666464
 
 #### IPv6
 
-| Rede de Destino /Prefixo    | Próximo Salto                 | Interface de Saída |
-| :-------------------------: | :---------------------------: | :----------------: |
-| 2001:DB8:CAFE:6400::/64     | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
-| 2001:DB8:CAFE:6401::/64     | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
-| 2001:DB8:CAFE:6402::/64     | FE80::1                       | Fa0/0              |
+| Rede de Destino /Prefixo     | Próximo Salto                 | Interface de Saída |
+| :--------------------------: | :---------------------------: | :----------------: |
+| 2001:DB8:CAFE:6400::/64      | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6401::/64      | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6402::/64      | FE80::1                       | Fa0/0              |
 
-| 2001:DB8:CAFE:6400::0:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Fa0/1              |
-| 2001:DB8:CAFE:6400::1:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Fa0/1              |
-| 2001:DB8:CAFE:6400::2:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Fa0/1              |
-| 2001:DB8:CAFE:6400::3:0/64  | 2001:DB8:CAFE:64FF::3:2/112   | Fa0/1              |
-| 2001:DB8:CAFE:6400::4:0/64  | FE80::1                       | Fa0/1              |
+| 2001:DB8:CAFE:6400::0:0/112  | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6400::1:0/112  | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6400::2:0/112  | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6400::3:0/112  | 2001:DB8:CAFE:64FF::4:1/112   | Fa0/1              |
+| 2001:DB8:CAFE:6400::4:0/112  | FE80::1                       | Fa0/1              |
 
 ---
 
@@ -219,44 +219,44 @@ RA: 2666464
 
 ### Identificação e Conexões
 
-| Campus | Nome do AP | Modelo utilizado | Notebook | Porta do switch ligada ao AP | Porta do AP ligada ao switch |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Pato Branco** | ap-pb-(iniciais) | (preencher) | (preencher) | (preencher) | **Gi1** |
-| **Francisco Beltrão** | ap-fb-(iniciais) | (preencher) | (preencher) | (preencher) | **Gi1** |
-| **Dois Vizinhos** | ap-dv-(iniciais) | (preencher) | (preencher) | (preencher) | **Gi1** |
+| Campus                | Nome do AP | Modelo utilizado | Notebook    | Porta do switch ligada ao AP | Porta do AP ligada ao switch |
+| :---                  | :---       | :---             | :---        | :---                         | :---                         |
+| **Pato Branco**       | ap-pb-rbb  | HomeRouter-PT-AC | Laptop1     | Gig0/1                       | **Gi1**                      |
+| **Francisco Beltrão** | ap-fb-rbb  | HomeRouter-PT-AC | Laptop2     | Gig0/1                       | **Gi1**                      |
+| **Dois Vizinhos**     | ap-dv-rbb  | HomeRouter-PT-AC | Laptop3     | Gig0/1                       | **Gi1**                      |
 
 ### Parâmetros Wi-Fi
 
-| Campus | SSID configurado | Segurança | Criptografia | Senha do ambiente simulado | DHCP do AP |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Pato Branco** | (preencher) | (preencher) | (preencher) | (preencher; mínimo 10 caracteres) | (preencher) |
-| **Francisco Beltrão** | (preencher) | (preencher) | (preencher) | (preencher; mínimo 10 caracteres) | (preencher) |
-| **Dois Vizinhos** | (preencher) | (preencher) | (preencher) | (preencher; mínimo 10 caracteres) | (preencher) |
+| Campus                | SSID configurado | Segurança     | Criptografia | Senha do ambiente simulado | DHCP do AP |
+| :---                  | :---             | :---          | :---         | :---                       | :---       |
+| **Pato Branco**       | UTFPR-PB-RBB     | WPA2 Personal | AES          | topologia-rbb              | Desligado  |
+| **Francisco Beltrão** | UTFPR-FB-RBB     | WPA2 Personal | AES          | topologia-rbb              | Desligado  |
+| **Dois Vizinhos**     | UTFPR-DV-RBB     | WPA2 Personal | AES          | topologia-rbb              | Desligado  |
 
-Outros parâmetros Wi-Fi configurados e observações sobre os modelos utilizados: **(preencher)**.
+Outros parâmetros Wi-Fi configurados e observações sobre os modelos utilizados: Nenhuma observação.
 
-Confirmação de que os APs utilizam os endereços planejados na Tarefa 2: **(preencher)**.
+Confirmação de que os APs utilizam os endereços planejados na Tarefa 2: Verificado.
 
 **Limitações verificadas na implementação — Tarefa 9:** se o modelo de AP não permitir configurar o gerenciamento IPv6 ou outro parâmetro de gerenciamento previsto, registre aqui essa condição. Os endereços IPv4 e IPv6 deverão permanecer definidos na Tarefa 2 como parte do planejamento. A comunicação IPv6 dos notebooks continua sendo requisito da expansão.
 
-Limitações do modelo e parâmetros efetivamente configurados: **(preencher)**.
+Limitações do modelo e parâmetros efetivamente configurados: O modelo não permite configurar ou gerenciar o IPv6 de maneira manual, mas a comunicação IPv6 dos notebooks funciona.
 
 ### Endereçamento Recebido pelos Notebooks
 
-| Campus | IPv4 / máscara | IPv6 GUA / prefixo | Gateway IPv4 | Gateway IPv6 | DNS IPv4 / IPv6 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Pato Branco** | (preencher) | (preencher) | (preencher) | (preencher) | (preencher) |
-| **Francisco Beltrão** | (preencher) | (preencher) | (preencher) | (preencher) | (preencher) |
-| **Dois Vizinhos** | (preencher) | (preencher) | (preencher) | (preencher) | (preencher) |
+| Campus                | IPv4 / máscara | IPv6 GUA / prefixo                    | Gateway IPv4  | Gateway IPv6 | DNS IPv4 / IPv6                       |
+| :---                  | :---           | :---                                  | :---          | :---         | :---                                  |
+| **Pato Branco**       | 200.136.64.7   | 2001:DB8:CAFE:6400:20A:F3FF:FE6C:86AA | 200.136.64.1  | FE80::1      | 200.136.64.3  / 2001:DB8:CAFE:6400::3 |
+| **Francisco Beltrão** | 200.136.64.70  | 2001:DB8:CAFE:6401:201:42FF:FE84:7B0A | 200.136.64.65 | FE80::1      | 200.136.64.67 / 2001:DB8:CAFE:6401::3 |
+| **Dois Vizinhos**     | 200.136.64.104 | 2001:DB8:CAFE:6402:201:43FF:FEB8:2EB0 | 200.136.64.97 | FE80::1      | 200.136.64.99 / 2001:DB8:CAFE:6402::3 |
 
 ### Resultados dos Testes da Tarefa 9
 
 Resuma os testes locais e remotos realizados com os notebooks, incluindo conectividade IPv4/IPv6, resolução de nomes e acesso às páginas Web. Informe eventuais pendências ou limitações.
 
-**Resumo dos resultados por campus:** (preencher)
+**Resumo dos resultados por campus:** Todos funcionando.
 
-**Data da última verificação:** (preencher)
+**Data da última verificação:** 2026-24-11 11:40
 
-**Pendências ou limitações registradas:** (preencher)
+**Pendências ou limitações registradas:** Nenhuma pendência.
 
 ---
